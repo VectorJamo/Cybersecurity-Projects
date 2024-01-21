@@ -11,10 +11,14 @@ domain = ''
 for c in target:
     if c.islower():
         domain += small_letters
+        small_letters = ''
     elif c.isupper():
         domain += capital_letters
+        capital_letters = ''
+        
     elif c.isnumeric():
         domain += numbers
+        capital_letters = ''
 
 guess = ''
 # Then, crack the password
