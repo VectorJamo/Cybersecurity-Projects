@@ -18,7 +18,7 @@ for c in target:
         
     elif c.isnumeric():
         domain += numbers
-        capital_letters = ''
+        numbers = ''
 
 guess = ''
 # Then, crack the password
